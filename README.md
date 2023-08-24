@@ -62,22 +62,12 @@ Please be aware of the [costs](https://openai.com/pricing) associated with using
 
 ### 2.2 AI Models
 
-This application uses the following OpenAI model:
- 
-| Model  | Description | Max tokens | Training data |
-| ------------- | ------------- |------------- | ------------- |
-| gpt-3.5-turbo  | Most capable GPT-3.5 model and optimized <br /> for chat at 1/10th the cost of text-davinci-003. <br /> Will be updated with our latest model iteration. | 4,096 tokens | Up to Sep 2021 |
-
-Further information about all OpenAI models can be found here: <a href="https://platform.openai.com/docs/models/overview">https://platform.openai.com/docs/models/overview</a>
-
-We endeavour to test and integrate newer models when they are become Generally Available (GA). Models released as a 'Limited Beta' will not be integrated until they become GA.
+This application uses the following GPT4All models:
+Default model: wizardlm-13b-v1.1-superhot-8k.ggmlv3.q4_0.bin
+https://github.com/nomic-ai/gpt4all
 
 
-### 2.3 OpenAI Status
 
-Should you receive error messages for a period of 5 minutes or more, please check the Chat Uptime status at the following link: <a href="https://status.openai.com/">https://status.openai.com/</a>
-
-<br />
     
 <!-- INSTRUCTIONS -->
 ## 3. Instructions
