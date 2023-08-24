@@ -111,7 +111,7 @@ Sub Chat()
     End If
     
     Dim intEndPos As Integer
-    intEndPos = InStr(1, strResponse, Chr(34) & "finish_reason" & Chr(34)) - 3
+    intEndPos = InStr(1, strResponse, Chr(34) & "role" & Chr(34)) - 3
 
     
     Dim intLength As Integer
