@@ -47,10 +47,10 @@ Sub Chat()
   strAPIKey = Environ("OPENAI_API_KEY")
   
   Dim strURL As String
-  strURL = "https://api.openai.com/v1/chat/completions"
+  strURL = "http://192.168.100.44/v1/chat/completions"
   
   Dim strModel As String
-  strModel = "gpt-3.5-turbo"
+  strModel = "wizardlm-13b-v1.1-superhot-8k.ggmlv3.q4_0.bin"
   
   Dim intMaxTokens As Integer
   intMaxTokens = 3584
@@ -81,7 +81,6 @@ Sub Chat()
   With objCurlHttp
     .Open "POST", strURL, False
     .SetRequestHeader "Content-type", "application/json"
-    .SetRequestHeader "Authorization", "Bearer " + strAPIKey
     .Send (strJSONdata)
     
     Dim strStatus As Integer
