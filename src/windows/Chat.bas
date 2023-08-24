@@ -43,9 +43,6 @@ Sub Chat()
 
 
 
-  Dim strAPIKey As String
-  strAPIKey = Environ("OPENAI_API_KEY")
-  
   Dim strURL As String
   strURL = "http://192.168.100.44/v1/chat/completions"
   
